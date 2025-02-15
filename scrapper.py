@@ -85,5 +85,6 @@ async def scrape_jumia(query="query", output_format="csv", max_pages=5):
         except Exception as e:
             print(f"An error occurred: {e}")
 
-# Run the scraper
+# Run the scraper to such gas cookers as our query
+# feel free to change the query to any other product you want to scrape
 asyncio.run(scrape_jumia(query="gas cooker", output_format="csv", max_pages=5))
